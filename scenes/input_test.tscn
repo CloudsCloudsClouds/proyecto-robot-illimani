@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bx6nllkwtbrei"]
+
+[ext_resource type="Script" path="res://scripts/classes/WorldEntity.cs" id="1_bgfla"]
+[ext_resource type="Script" path="res://scripts/components/ComponentPlayerController.cs" id="2_xyobu"]
+[ext_resource type="Script" path="res://scripts/components/ComponentControllerPrinter.cs" id="3_l22ix"]
+
+[node name="InputTest" type="CharacterBody3D"]
+script = ExtResource("1_bgfla")
+
+[node name="ComponentPlayerController" type="Node3D" parent="."]
+script = ExtResource("2_xyobu")
+
+[node name="ComponentControllerPrinter" type="Node3D" parent="."]
+script = ExtResource("3_l22ix")

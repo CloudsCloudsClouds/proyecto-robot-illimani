@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2io3env15kkm"]
+
+[ext_resource type="Script" path="res://scripts/Player.cs" id="1_thl55"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_e8usr"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_thl55")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_e8usr")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
